@@ -94,7 +94,9 @@ class DropDownBox extends BoxTemplate {
 
 
 function loginPage(){
-
+    
+    reset()
+    
     document.body.style.backgroundColor = "#d9d9d9";
     
     const div1 = document.createElement("div");
