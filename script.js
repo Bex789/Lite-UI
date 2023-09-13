@@ -10,7 +10,7 @@ boxType = ["i","i","i","i","d","i","i","i","i","i","d","i","i","i","i","d","i","
 
 let j = 2;
 
-
+let found = 0
 
 class BoxTemplate {
     constructor(title){
@@ -439,10 +439,9 @@ function checkLogin(){
                 }
                 if(idCorrect === 1 && nameCorrect === 1 && passwordCorrect === 1){
                     console.log("YAY")
-                    homePage()
+                    found++
                 } else{
                     console.log("nope")
-                    loginPage()
                 }
 
                 console.log("idCorrect" + idCorrect)
@@ -451,4 +450,11 @@ function checkLogin(){
             })
         }
     })
+    if (found != 0){
+        found = 0
+        homePage()
+    }
+    else{
+        loginPage()
+    }
 }
