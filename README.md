@@ -18,3 +18,8 @@ this website was coded with:
   JavaScript
   CSS
   Json
+
+
+Changelog
+
+- Added Daniel to repository
