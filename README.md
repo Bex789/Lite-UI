@@ -23,3 +23,6 @@ this website was coded with:
 Changelog
 
 - Added Daniel to repository
+- Added Comments to Script.js File
+- Removed Console.log from line 239
+ 
