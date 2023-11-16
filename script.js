@@ -233,10 +233,12 @@ function homePage(){
 
 
 function account(){
-    console.log('cheese')
+    //Calls the reset function which will reset the page
     reset()
+    //Calls the navBar function which will create a nav bar
     navBar()
-
+    
+    //creates elements
     const breadcrumbL1 = document.createElement("p")
     breadcrumbL1.innerHTML = "<a href='#'>Customer Management System</a> / <a href='#'>Data Management</a>" 
     document.body.appendChild(breadcrumbL1);
@@ -253,7 +255,7 @@ function account(){
     accountDiv.setAttribute("id", "accountDiv");
     accountDiv.setAttribute("class", "accountDiv");
     document.body.appendChild(accountDiv);
-
+    // For loop that creates Input box / dropdown objects
     for (let f = 0; f < boxTitle.length; f++){
         if(boxType[f] == "i"){
             let test = new InputBox(boxTitle[f])
